@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Linkvert | Share And Earn</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="https://art.pixilart.com/10b360b87b0087d.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+<nav id="dropdown">
+  <div class="mtooltip">
+<p><i class="fas fa-square fa-lg"></i></p>
+<span class="mtooltiptext">
+<ul>
+  <a class="ma" href="/"><li><i class="fas fa-home"></i> home</li></a>
+  <% if (login) {%>
+  <a class="ma"href="/author"><li><i class="fas fa-user-circle"></i> profile</li></a>
+  <a class="ma"href="/earnings"><li><i class="fas fa-dollar-sign"></i> earnings</li></a>
+  <a class="ma"href="/logout"><li><i class="fas fa-sign-out-alt"></i> logout</li></a>
+  <a class="ma"href="/contact"><li><i class="fas fa-envelope"></i> contact</li></a>
+  <%} else {%>
+  <a class="ma"href="/login"><li><i class="fas fa-sign-in-alt"></i> login</li></a>
+  <a class="ma"href="/register"><li><i class="fas fa-user-plus"></i> register</li></a>
+  <a class="ma"href="/contact"><li><i class="fas fa-envelope"></i> contact</li></a>
+  <%}%>
+
+
+</ul>
+</span>
+  </div>
+
+</nav>
+
+<script type="text/javascript">
+  document.addEventListener("touchstart", function() {}, true);
+
+  $('.mtooltip').click(function() {
+    $(".mtooltiptext").toggle().css(  "visibility", "visible");
+});
+</script>
+  <div class="container">
